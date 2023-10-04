@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain="mumbai"
       clientId={process.env.NEXT_PUBLIC_THIRDWEB_API_KEY}
       supportedWallets={[
-        smartWallet(metamaskWallet({ recommended: true }), smartWalletOptions),
+        smartWallet(metamaskWallet(), smartWalletOptions),
         smartWallet(coinbaseWallet(), smartWalletOptions),
         smartWallet(walletConnect(), smartWalletOptions),
         smartWallet(trustWallet(), smartWalletOptions),
